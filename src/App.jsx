@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from "./Header";
+import PersonalInfo from "./PersonalInfo";
 import Profile from "./Profile";
 
 class App extends Component {
@@ -15,10 +16,11 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="align-content-around">
       <Header />
-      <div className="container">
-        <Profile />
+      <div className="container mt-4">
+          {/* <Profile /> */}
+          <PersonalInfo />
       </div>
       </div>
     );
