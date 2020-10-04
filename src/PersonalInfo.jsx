@@ -7,7 +7,9 @@ export default class PersonalInfo extends Component {
       first_name: "",
       last_name: "",
       email: "",
+      address: "",
       country: "",
+      city: "",
       zip_code: "",
     };
   }
@@ -36,11 +38,20 @@ export default class PersonalInfo extends Component {
         <div className="form-groupt mt-2">
           <label htmlFor="email">Email:</label>
           <input
-            type="text"
+            type="email"
             className="form-control"
             id="username"
             aria-describedby="emailHelp"
-            placeholder="Enter email"
+            placeholder="enter email"
+          />
+        </div>
+        <div className="form-group mt-2">
+          <label htmlFor="Address">Address:</label>
+          <textarea
+            type="text"
+            className="form-control"
+            id="bio"
+            placeholder="enter address"
           />
         </div>
         <div className="form-row mt-2">
@@ -69,7 +80,7 @@ export default class PersonalInfo extends Component {
             />
           </div>
         </div>
-        <div className="d-flex justify-content-between mt-4">
+        <div className="d-flex justify-content-between mt-2">
           <button type="submit" className="btn btn-primary">
             Previous
           </button>
