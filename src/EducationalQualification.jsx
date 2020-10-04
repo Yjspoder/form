@@ -13,6 +13,7 @@ export default class EducationalQualification extends Component {
   render() {
     return (
       <form>
+        <h1 className="h2 d-flex justify-content-center">Educational Qualification</h1>
         <div className="form-group">
           <label htmlFor="school">School:</label>
           <input
@@ -43,6 +44,9 @@ export default class EducationalQualification extends Component {
             placeholder="enter post graduation"
           />
         </div>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
       </form>
     );
   }

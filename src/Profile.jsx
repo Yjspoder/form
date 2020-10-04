@@ -14,7 +14,7 @@ export default class Profile extends Component {
   render() {
     return (
       <form className="container-md">
-        <h1 className="h1 d-flex justify-content-center">Profile</h1>
+        <h1 className="h2 d-flex justify-content-center">Profile</h1>
         <div className="form-group">
           <label htmlFor="username">Username:</label>
           <input

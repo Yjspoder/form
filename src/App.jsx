@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import EducationalQualification from "./EducationalQualification";
 import Header from "./Header";
 import PersonalInfo from "./PersonalInfo";
 import Profile from "./Profile";
@@ -19,8 +20,9 @@ class App extends Component {
       <div className="align-content-around">
       <Header />
       <div className="container mt-4">
-          {/* <Profile /> */}
-          <PersonalInfo />
+          <Profile />
+          {/* <PersonalInfo /> */}
+          {/* <EducationalQualification /> */}
       </div>
       </div>
     );

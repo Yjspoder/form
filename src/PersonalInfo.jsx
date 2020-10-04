@@ -17,6 +17,7 @@ export default class PersonalInfo extends Component {
   render() {
     return (
       <form className="container">
+        <h1 className="h3 d-flex justify-content-center">Personal Information</h1>
         <div className="form-row">
           <div className="col">
             <label htmlFor="First name">First Name:</label>
