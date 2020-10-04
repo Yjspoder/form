@@ -22,7 +22,7 @@ export default class Profile extends Component {
             className="form-control"
             id="username"
             aria-describedby="usernameHelp"
-            placeholder="Enter username"
+            placeholder="enter username"
           />
         </div>
         <div className="form-group">
@@ -31,7 +31,7 @@ export default class Profile extends Component {
             type="text"
             className="form-control"
             id="bio"
-            placeholder="Enter Bio"
+            placeholder="enter Bio"
           />
         </div>
         <div className="form-group">
@@ -54,7 +54,7 @@ export default class Profile extends Component {
           />
         </div>
         <button type="submit" className="btn btn-primary">
-          Submit
+          Next
         </button>
       </form>
     );
