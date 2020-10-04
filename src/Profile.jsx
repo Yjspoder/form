@@ -11,7 +11,13 @@ export default class Profile extends Component {
     };
   }
 
+  handleChange = ({ target: { id, value } }) => {
+    this.setState({
+      [id]: value
+    })
+  }
   render() {
+    const { username, bio, photo, phone_number } = this.state;
     return (
       <form className="container-md">
         <h1 className="h2 d-flex justify-content-center">Profile</h1>
@@ -23,6 +29,8 @@ export default class Profile extends Component {
             id="username"
             aria-describedby="usernameHelp"
             placeholder="enter username"
+            onChange={this.handleChange}
+            value={username}
           />
         </div>
         <div className="form-group">
@@ -32,6 +40,8 @@ export default class Profile extends Component {
             className="form-control"
             id="bio"
             placeholder="enter Bio"
+            onChange={this.handleChange}
+            value={bio}
           />
         </div>
         <div className="form-group">
@@ -39,7 +49,9 @@ export default class Profile extends Component {
           <input
             type="file"
             className="form-control-file"
-            id="exampleFormControlFile1"
+            id="photo"
+            onChange={this.handleChange}
+            value={photo}
           />
         </div>
         <div className="form-group">
@@ -49,8 +61,9 @@ export default class Profile extends Component {
           <input
             className="form-control"
             type="tel"
-            // value=""
-            id="example-tel-input"
+            value={phone_number}
+            id="phone_number"
+            onChange={this.handleChange}
           />
         </div>
         <button type="submit" className="btn btn-primary">

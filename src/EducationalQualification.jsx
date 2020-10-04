@@ -10,10 +10,19 @@ export default class EducationalQualification extends Component {
     };
   }
 
+  handleChange = ({ target: { id, value } }) => {
+    this.setState({
+      [id]: value,
+    });
+  };
+
   render() {
+    const { school, college, post_graduation } = this.state;
     return (
       <form>
-        <h1 className="h2 d-flex justify-content-center">Educational Qualification</h1>
+        <h1 className="h2 d-flex justify-content-center">
+          Educational Qualification
+        </h1>
         <div className="form-group">
           <label htmlFor="school">School:</label>
           <input
@@ -22,6 +31,8 @@ export default class EducationalQualification extends Component {
             id="school"
             aria-describedby="schoolHelp"
             placeholder="enter school education"
+            onChange={this.handleChange}
+            value={school}
           />
         </div>
         <div className="form-group">
@@ -32,6 +43,8 @@ export default class EducationalQualification extends Component {
             id="college"
             aria-describedby="collegeHelp"
             placeholder="enter college education"
+            onChange={this.handleChange}
+            value={college}
           />
         </div>
         <div className="form-group">
@@ -42,6 +55,8 @@ export default class EducationalQualification extends Component {
             id="post_graduation"
             aria-describedby="postGraduationHelp"
             placeholder="enter post graduation"
+            onChange={this.handleChange}
+            value={post_graduation}
           />
         </div>
         <button type="submit" className="btn btn-primary">
