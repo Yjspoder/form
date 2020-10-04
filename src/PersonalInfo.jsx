@@ -46,7 +46,11 @@ export default class PersonalInfo extends Component {
         <div className="form-row mt-2">
           <div className="col-6">
             <label htmlFor="Country">Country:</label>
-            <select class="selectpicker countrypicker"></select>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="enter country"
+            />
           </div>
           <div className="col">
             <label htmlFor="City">City:</label>
