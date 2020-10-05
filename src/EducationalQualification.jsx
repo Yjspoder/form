@@ -6,7 +6,8 @@ export default class EducationalQualification extends Component {
     this.state = {
       school: "",
       college: "",
-      post_graduation: ""
+      post_graduation: "",
+      general_error: null
     };
   }
 
@@ -16,13 +17,33 @@ export default class EducationalQualification extends Component {
     });
   };
 
-  render() {
+  handleError = (e) => {
+    e.preventDefault();
     const { school, college, post_graduation } = this.state;
+    !school || !college || !post_graduation
+      ? this.setState({
+          general_error: "All fields are must.",
+        })
+      : console.log("state set.")
+  };
+
+  render() {
+    const { school, college, post_graduation, general_error } = this.state;
     return (
-      <form>
+      <form onSubmit={this.handleError}>
         <h1 className="h2 d-flex justify-content-center">
           Educational Qualification
         </h1>
+        {general_error ? (
+          <div className="alert alert-warning" role="alert">
+            <strong className="d-flex justify-content-center">
+              {general_error}
+            </strong>
+          </div>
+        ) : (
+          <></>
+          )}
+        
         <div className="form-group">
           <label htmlFor="school">School:</label>
           <input
@@ -60,7 +81,7 @@ export default class EducationalQualification extends Component {
           />
         </div>
         <button type="submit" className="btn btn-primary">
-          Submit
+          Next
         </button>
       </form>
     );
