@@ -100,6 +100,7 @@ export default class Profile extends Component {
         ) : (
           <></>
         )}
+
         <div className="form-group">
           <label htmlFor="username">Username:</label>
           <input
@@ -124,6 +125,7 @@ export default class Profile extends Component {
             <></>
           )}
         </div>
+
         <div className="form-group">
           <label htmlFor="bio">Bio:</label>
           <textarea
@@ -145,6 +147,7 @@ export default class Profile extends Component {
             <></>
           )}
         </div>
+
         <div className="form-group">
           <label htmlFor="photo">Photo:</label>
           <input
@@ -167,6 +170,7 @@ export default class Profile extends Component {
             <></>
           )}
         </div>
+
         <div className="form-group">
           <label htmlFor="Phone Number">Phone Number:</label>
           <input
@@ -189,6 +193,7 @@ export default class Profile extends Component {
             <></>
           )}
         </div>
+
         <button type="submit" className="btn btn-primary">
           Next
         </button>
