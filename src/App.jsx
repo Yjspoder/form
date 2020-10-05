@@ -21,8 +21,8 @@ class App extends Component {
       <Header />
       <div className="container mt-4">
           {/* <Profile /> */}
-          <PersonalInfo />
-          {/* <EducationalQualification /> */}
+          {/* <PersonalInfo /> */}
+          <EducationalQualification />
       </div>
       </div>
     );
