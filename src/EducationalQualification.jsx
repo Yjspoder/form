@@ -6,7 +6,7 @@ export default class EducationalQualification extends Component {
     this.state = {
       school: "",
       college: "",
-      post_graduation: "",
+      post_graduation: ""
     };
   }
 
