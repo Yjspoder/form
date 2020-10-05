@@ -20,9 +20,9 @@ class App extends Component {
       <div className="align-content-around">
       <Header />
       <div className="container mt-4">
-          {/* <Profile /> */}
+          <Profile />
           {/* <PersonalInfo /> */}
-          <EducationalQualification />
+          {/* <EducationalQualification /> */}
       </div>
       </div>
     );
